@@ -20,7 +20,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-6">
                 <input
                   type="search"
                   placeholder="Type a city.."
@@ -32,9 +32,18 @@
               <div class="col-3">
                 <input
                   type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
+                  value="search🔎"
+                  class="btn btn-outline-info w-100"
                 />
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-outline-info w-100"
+                  id="current-location"
+                >
+                  current📍
+                </button>
               </div>
             </div>
           </form>
@@ -68,7 +77,8 @@
         </div>
         <small>
           <a
-            href="https://github.com/Garciasince00/vanilla-weather-app" id="opensource-code"
+            href="https://github.com/Garciasince00/vanilla-weather-app"
+            id="opensource-code"
             target="_blank"
             >Open-source code</a
           >
