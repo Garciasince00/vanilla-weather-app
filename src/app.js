@@ -39,6 +39,7 @@ function displayForecast(response) {
         forecastHTML +
         `
   <div class="col-2">
+  <div class="card border-info" style = "max-width:10rem;">
   <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
   <img
   src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
@@ -46,6 +47,7 @@ function displayForecast(response) {
   }.png"
   alt=""
   width="42"
+  id="forecast-icon"
   />
   <div class="weather-forecast-temperatures">
   <span class="weather-forecast-temperature-max">${Math.round(
@@ -54,6 +56,7 @@ function displayForecast(response) {
   <span class="weather-forecast-temperature-min">${Math.round(
     forecastDay.temperature.minimum
   )}° </span>
+  </div>
   </div>
   </div>
   `;
