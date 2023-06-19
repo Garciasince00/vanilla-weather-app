@@ -45,6 +45,15 @@ li:first-letter {
   line-height: 48px;
 }
 
+.weather-temperature .active {
+  color: #202124;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
@@ -65,4 +74,8 @@ li:first-letter {
 }
 a {
   text-decoration: none;
+}
+
+#opensource-code:hover {
+  text-decoration: underline;
 }
