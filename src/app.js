@@ -39,7 +39,7 @@ function displayForecast(response) {
         forecastHTML +
         `
   <div class="col-2">
-  <div class="card border-info" style = "max-width:10rem;">
+  <div class="card border" style = "max-width:10rem;" id="card">
   <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
   <img
   src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
